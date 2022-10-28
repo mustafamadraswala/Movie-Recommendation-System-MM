@@ -54,10 +54,10 @@ pip install -r requirements.txt
 
 ### Setup your Github account
 ```
-git config --global user.name "mustafamadraswala"
+git config --global user.name "<your github username>"
 ```
 ```
-git config --global user.email "museychamp@gmail.com"
+git config --global user.email "<your github email id>"
 ```
 
 ### Push all the changes and code to Github -
@@ -76,7 +76,7 @@ Commit all the files to github by pushing the fies from local to  thestaging env
 git commit -m "This is my first commit includes requirement.txt and readme.md file"
 ```
 
-Or do both tthe steps together -
+Or do both the steps together -
 ```
 git add . && git commit -m "This is my first commit"
 ```
