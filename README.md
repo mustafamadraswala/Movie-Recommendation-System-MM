@@ -129,28 +129,28 @@ For eg - Streamlit, Flask, Requests
 1. movie_list.pkl 
 2. similarity.pkl - This model file is more than 100 mb and it will not push to github.
 
-So instead after step number 3, install heroku CLI on your local machine.
-Close vscode and start the environment again after heroku installation and then perform the following steps.
-Ps - These will be mentioned in your application on heroku -
+###### So instead after step number 3, install heroku CLI on your local machine.
+###### Close vscode and start the environment again after heroku installation and then perform the following steps.
+###### Ps - These will be mentioned in your application on heroku -
 
 
 >> heroku login
-Create a new Git repository
-Initialize a git repository in a new or existing directory
+###### Create a new Git repository
+######Initialize a git repository in a new or existing directory
 
 >> cd my-project/
 >> git init
 >> heroku git:remote -a movie-recommendation-system-mm
 
-Deploy your application
-Commit your code to the repository and deploy it to Heroku using Git.
+###### Deploy your application
+###### Commit your code to the repository and deploy it to Heroku using Git.
 
 >> git add .
 >> git commit -am "first deployment"
 >> git push heroku master
 
-You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
-Existing Git repository
-For existing repositories, simply add the heroku remote
+###### You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+###### Existing Git repository
+###### For existing repositories, simply add the heroku remote
 
 =======================================================================================
