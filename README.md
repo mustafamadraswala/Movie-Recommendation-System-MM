@@ -137,7 +137,7 @@ For eg - Streamlit, Flask, Requests
 >> heroku login
 ```
 ###### Create a new Git repository
-######Initialize a git repository in a new or existing directory
+###### Initialize a git repository in a new or existing directory
 ```
 >> cd my-project/
 `````
