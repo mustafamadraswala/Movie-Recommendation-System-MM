@@ -118,12 +118,39 @@ web: sh setup.sh && streamlit run app.py
 2. Create a setup.sh file -
 ps - Required for streamlit implementation
 
-3. Add nltk.txt file with the corpus names mentioned inside it (stopwords, punkt, wordcloud)
-ps - Required for heroku implementation
+3. Add requirements.txt 
+If deploying the app to heroku is not working, mostky it is a library version error.
+Just add the names of the libraries and not the versions.
+For eg - Streamlit, Flask, Requests
 
-4. Push final commit to github
-5. Go to Heroku - Create an app movie-recommendation-system-mm
-6. Connect the app with github repo
-7. Deploy branch on heroku
+4. Go to Heroku - Create an app movie-recommendation-system-mm
 
-====================================================================
+#### In this project directly deploying to github will not work as you need to upload 2 pickle models -
+1. movie_list.pkl 
+2. similarity.pkl - This model file is more than 100 mb and it will not push to github.
+
+So instead after step number 3, install heroku CLI on your local machine.
+Close vscode and start the environment again after heroku installation and then perform the following steps.
+Ps - These will be mentioned in your application on heroku -
+
+
+$ heroku login
+Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a movie-recommendation-system-mm
+
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "first deployment"
+$ git push heroku master
+
+You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+Existing Git repository
+For existing repositories, simply add the heroku remote
+
+=======================================================================================
