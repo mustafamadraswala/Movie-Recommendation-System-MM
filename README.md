@@ -6,15 +6,15 @@
 ### Anaconda Steps - 
 
 1. Open anaconda prompt
-2. Base environment - 
+2. Create a local Folder
+3. Copy the path --> cd in anaconda prompt to the path (D:\)
+4. Base environment - 
 ```
 conda create -n <my_env_name> python=3.8.8 -y
 ```
 ```
 conda activate <my_env_name>
 ```
-3. Create a local Folder
-4. Copy the path --> cd in anaconda prompt to the path (D:\)
 ```
  jupyter notebook
 ```
