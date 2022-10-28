@@ -158,7 +158,7 @@ For eg - Streamlit, Flask, Requests
 >> git commit -am "first deployment"
 ```
 ```
->> git push heroku master
+>> git push heroku main
 ```
 ###### You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
 ###### Existing Git repository
