@@ -134,20 +134,20 @@ Close vscode and start the environment again after heroku installation and then 
 Ps - These will be mentioned in your application on heroku -
 
 
-$ heroku login
+>> heroku login
 Create a new Git repository
 Initialize a git repository in a new or existing directory
 
-$ cd my-project/
-$ git init
-$ heroku git:remote -a movie-recommendation-system-mm
+>> cd my-project/
+>> git init
+>> heroku git:remote -a movie-recommendation-system-mm
 
 Deploy your application
 Commit your code to the repository and deploy it to Heroku using Git.
 
-$ git add .
-$ git commit -am "first deployment"
-$ git push heroku master
+>> git add .
+>> git commit -am "first deployment"
+>> git push heroku master
 
 You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
 Existing Git repository
